@@ -2,13 +2,13 @@
 
 import PackageDescription
 
-let version = "4.5.5"
+let version = "4.5.6"
 
-let UnbluCoreSDK_CHECKSUM = "89131e09f351be18b84b2aa24c04070812ca26899bbc625931ce86371eb437fc"
-let UnbluFirebaseNotificationModule_CHECKSUM = "409cb55429c4e61b30bba010e3f96f2a3fdbb0f64c4a3aa46404b9144d9f587e"
-let UnbluOpenTokCallModule_CHECKSUM = "dcba8246c85ed9424e0b4785914565f2c9ee96bfa248fb94cec09707cb13d878"
-let UnbluLiveKitCallModule_CHECKSUM = "dcba8246c85ed9424e0b4785914565f2c9ee96bfa248fb94cec09707cb13d878"
-let UnbluMobileCoBrowsing_CHECKSUM = "c53a9470638830e3345fb997d4f916c303da9a9936fd8deef0a7a073f96f7cc6"
+let UnbluCoreSDK_CHECKSUM = "86eb5c60a88a2c9cef069b94589b728d8f09b0e354f9be6a17f8e1d17abea4b9"
+let UnbluFirebaseNotificationModule_CHECKSUM = "674f350b812d782b640ae59b273790f8139655a4ffd25485401a71182e5012cf"
+let UnbluOpenTokCallModule_CHECKSUM = ""
+let UnbluLiveKitCallModule_CHECKSUM = ""
+let UnbluMobileCoBrowsing_CHECKSUM = "bfe247f3bb268a724d3397e15f1f9808704527915dfe021c9f1c92c8c98a0a0f"
 
 
 let package = Package(
