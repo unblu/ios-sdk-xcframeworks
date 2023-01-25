@@ -2,9 +2,9 @@
 
 import PackageDescription
 
-let version = "4.5.7"
+let version = "4.5.8"
 
-let UnbluCoreSDK_CHECKSUM = "5a5e6a133c98e1706adf9ebf958e03ad35ba952a78f6d9e4efe9e39c7b9ff037"
+let UnbluCoreSDK_CHECKSUM = "cf78051027ffd69e9c713c552feacd0a5ad8e13f09d432017eeba36bd21753a7"
 let UnbluFirebaseNotificationModule_CHECKSUM = "674f350b812d782b640ae59b273790f8139655a4ffd25485401a71182e5012cf"
 let UnbluOpenTokCallModule_CHECKSUM = "ad56431bbeca76862d563bd583ed01bf403a296de0caa576fa0a7292d2ec7858"
 let UnbluLiveKitCallModule_CHECKSUM = "ac430de40a846c6651d6589117e560bd4d39c487d8e4830194aa87501f9d10eb"
