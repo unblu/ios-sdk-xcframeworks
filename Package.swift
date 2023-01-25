@@ -4,7 +4,7 @@ import PackageDescription
 
 let version = "4.5.6"
 
-let UnbluCoreSDK_CHECKSUM = "1c8f60c3a515d450632ca2c324b8789978e10153d6304fe5d00fd1896a4986fb"
+let UnbluCoreSDK_CHECKSUM = "10a327ca9136d4b6a35a6e6eb073e62c759adc409ae8bc59f106a0ee925c1bfd"
 let UnbluFirebaseNotificationModule_CHECKSUM = "674f350b812d782b640ae59b273790f8139655a4ffd25485401a71182e5012cf"
 let UnbluOpenTokCallModule_CHECKSUM = "ad56431bbeca76862d563bd583ed01bf403a296de0caa576fa0a7292d2ec7858"
 let UnbluLiveKitCallModule_CHECKSUM = "ac430de40a846c6651d6589117e560bd4d39c487d8e4830194aa87501f9d10eb"
