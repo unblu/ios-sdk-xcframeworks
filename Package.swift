@@ -6,8 +6,8 @@ let version = "4.5.6"
 
 let UnbluCoreSDK_CHECKSUM = "86eb5c60a88a2c9cef069b94589b728d8f09b0e354f9be6a17f8e1d17abea4b9"
 let UnbluFirebaseNotificationModule_CHECKSUM = "674f350b812d782b640ae59b273790f8139655a4ffd25485401a71182e5012cf"
-let UnbluOpenTokCallModule_CHECKSUM = ""
-let UnbluLiveKitCallModule_CHECKSUM = ""
+let UnbluOpenTokCallModule_CHECKSUM = "?"
+let UnbluLiveKitCallModule_CHECKSUM = "?"
 let UnbluMobileCoBrowsing_CHECKSUM = "bfe247f3bb268a724d3397e15f1f9808704527915dfe021c9f1c92c8c98a0a0f"
 
 
