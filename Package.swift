@@ -21,6 +21,7 @@ let package = Package(
             name: "UnbluMobileSDK",
             targets: ["UnbluCoreSDK","UnbluFirebaseNotificationModule","UnbluOpenTokCallModule","UnbluLiveKitCallModule","UnbluMobileCoBrowsingModule"]),
     ],
+    dependencies: [.package(name: "WebRTC", url: "https://github.com/webrtc-sdk/Specs.git", .exact("104.5112.08") ],
     targets: [
         .binaryTarget(
             name: "UnbluCoreSDK",
@@ -39,7 +40,6 @@ let package = Package(
             ),
         .binaryTarget(
             name: "UnbluLiveKitCallModule",
-            dependencies: [.package(name: "WebRTC", url: "https://github.com/webrtc-sdk/Specs.git", .exact("104.5112.08") ],
             url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluLiveKitCallModule.xcframework.zip?raw=true",
             checksum: UnbluLiveKitCallModule_CHECKSUM
             ),
