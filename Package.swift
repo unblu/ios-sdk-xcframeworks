@@ -2,11 +2,11 @@
 
 import PackageDescription
 
-let version = "4.5.8"
+let version = "4.5.9"
 
-let UnbluCoreSDK_CHECKSUM = "45dc7e3441ea726549a95b47ddb7f16e2ca9fb678ff07d4fe1cae08ff1dea51a"
-let UnbluFirebaseNotificationModule_CHECKSUM = "ebf0c811320a2266070599aaf79e299bec9797fbd4f7f28e508c6e5e04f9ab51"
-let UnbluMobileCoBrowsing_CHECKSUM = "caa8cb46ff601218289e125d19b557dce28dd6b6a8c391c06f50b1d998b0a472"
+let UnbluCoreSDK_CHECKSUM = "61cda7c8d2229d5496809374677820ef3f25cc1583bedbaefd6145c231342f31"
+let UnbluFirebaseNotificationModule_CHECKSUM = "b1ae286fd2dbd2c6e61b17c5a3e0ca485b0bf91576e3a2ff6fc1ef6808a33d38"
+let UnbluMobileCoBrowsing_CHECKSUM = "6cbd154540b1f9e04dc17aea120cda5e26689c3b12ae467d23ae86fcfe627ec6"
 
 
 let package = Package(
