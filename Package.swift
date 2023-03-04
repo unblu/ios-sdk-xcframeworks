@@ -53,7 +53,7 @@ let package = Package(
             name: "UnbluMobileCoBrowsingModule",
             url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluMobileCoBrowsingModule.xcframework.zip?raw=true",
             checksum: UnbluMobileCoBrowsing_CHECKSUM
-            )
+            ),
         .binaryTarget(
             name: "FirebaseMessaging",
             url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/FirebaseMessaging.xcframework.zip?raw=true",
