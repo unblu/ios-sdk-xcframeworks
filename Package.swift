@@ -9,7 +9,7 @@ let UnbluFirebaseNotificationModule_CHECKSUM = "24cb63cc16589a22525ccc85a6fc788f
 let UnbluOpenTokCallModule_CHECKSUM = "662284dac9d66969ad7cfad94a2b50c2eefab0953ab9ed45174465baac231492"
 let UnbluLiveKitCallModule_CHECKSUM = "8387b6201e73d3c4d8bf54abb2a5b7e5b9697ca91e80f984c34fd34b5d29438b"
 let UnbluMobileCoBrowsing_CHECKSUM = "e864332dac9363d8c9f67a28a4c3a03c11c4306d1d3016073fde99d3e5bfd65d"
-let FirebaseMessaging_CHECKSUM = "e864332dac9363d8c9f67a28a4c3a03c11c4306d1d3016073fde99d3e5bfd65d"
+let FirebaseMessaging_CHECKSUM = "b4c37fb1bf66b2090d966b8d655980d55740725b8e95574fac51d15b586560c8"
 
 
 let package = Package(
