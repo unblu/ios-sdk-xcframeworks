@@ -33,7 +33,7 @@ let package = Package(
     products: [
         .library(
             name: "UnbluMobileSDK",
-            targets: ["UnbluCoreSDK","UnbluFirebaseNotificationModule","UnbluMobileCoBrowsingModule","FirebaseMessagingOrigin"]),
+            targets: ["UnbluCoreSDK","UnbluFirebaseNotificationModule","UnbluMobileCoBrowsingModule"]),
         .library(
             name: "UnbliLiveKitWebRtcProvider",
             targets: ["UnbluLiveKitCallModule"]),
@@ -84,19 +84,6 @@ let package = Package(
                   ],
                   path: "Source/FirebaseMessaging"
                 ),
-            .target(
-                  name: "FirebaseAnalyticsOrigin",
-                  dependencies: [
-                    "Firebase",
-                    "_FBLPromises",
-                    "_FirebaseCore",
-                    "_FirebaseCoreInternal",
-                    "_FirebaseInstallations",
-                    "_GoogleUtilities",
-                    "_nanopb"
-                  ],
-                  path: "Source/FirebaseAnalytics"
-            ),
            .binaryTarget(
               name: "_FirebaseMessaging",
               url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseMessaging.xcframework.zip?raw=true",
@@ -106,46 +93,6 @@ let package = Package(
               name: "_GoogleDataTransport",
               url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleDataTransport.xcframework.zip?raw=true",
               checksum: _GoogleDataTransport_CHECKSUM
-            ),
-            .binaryTarget(
-              name: "_FBLPromises",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FBLPromises.xcframework.zip?raw=true",
-              checksum: _FBLPromises_CHECKSUM
-            ),
-            .binaryTarget(
-              name: "_FirebaseCore",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCore.xcframework.zip?raw=true",
-              checksum: _FirebaseCore_CHECKSUM
-            ),
-            .binaryTarget(
-              name: "_FirebaseCoreInternal",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCoreInternal.xcframework.zip?raw=true",
-              checksum: _FirebaseCoreInternal_CHECKSUM
-            ),
-            .binaryTarget(
-              name: "_FirebaseInstallations",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseInstallations.xcframework.zip?raw=true",
-              checksum: _FirebaseInstallations_CHECKSUM
-            ),
-           .binaryTarget(
-              name: "_GoogleAppMeasurement",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleAppMeasurement.xcframework.zip?raw=true",
-              checksum: _GoogleAppMeasurement_CHECKSUM
-            ),
-            .binaryTarget(
-              name: "_GoogleAppMeasurementIdentitySupport",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleAppMeasurementIdentitySupport.xcframework.zip?raw=true",
-              checksum: _GoogleAppMeasurementIdentitySupport_CHECKSUM
-            ),
-            .binaryTarget(
-              name: "_GoogleUtilities",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleUtilities.xcframework.zip?raw=true",
-              checksum: _GoogleUtilities_CHECKSUM
-            ),
-            .binaryTarget(
-              name: "_nanopb",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_nanopb.xcframework.zip?raw=true",
-              checksum: _nanopb_CHECKSUM
             )
     ]
 )
