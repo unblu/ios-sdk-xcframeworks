@@ -79,6 +79,7 @@ let package = Package(
                   name: "FirebaseMessagingOrigin",
                   dependencies: [
                     "Firebase",
+                    "_FirebaseCore",
                     "_FirebaseMessaging",
                     "_GoogleDataTransport"
                   ],
@@ -93,6 +94,11 @@ let package = Package(
               name: "_GoogleDataTransport",
               url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleDataTransport.xcframework.zip?raw=true",
               checksum: _GoogleDataTransport_CHECKSUM
-            )
+            ),
+           .binaryTarget(
+              name: "_FirebaseCore",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCore.xcframework.zip?raw=true",
+              checksum: _FirebaseCore_CHECKSUM
+            ),
     ]
 )
