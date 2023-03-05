@@ -33,7 +33,7 @@ let package = Package(
     products: [
         .library(
             name: "UnbluMobileSDK",
-            targets: ["UnbluCoreSDK","UnbluFirebaseNotificationModule","UnbluMobileCoBrowsingModule"]),
+            targets: ["UnbluCoreSDK","UnbluFirebaseNotificationModule","UnbluMobileCoBrowsingModule","FirebaseMessagingOrigin"]),
         .library(
             name: "UnbliLiveKitWebRtcProvider",
             targets: ["UnbluLiveKitCallModule"]),
@@ -90,13 +90,9 @@ let package = Package(
                   dependencies: [
                     "Firebase",
                     "_FBLPromises",
-                    "_FirebaseAnalytics",
-                    "_FirebaseAnalyticsSwift",
                     "_FirebaseCore",
                     "_FirebaseCoreInternal",
                     "_FirebaseInstallations",
-                    "_GoogleAppMeasurement",
-                    "_GoogleAppMeasurementIdentitySupport",
                     "_GoogleUtilities",
                     "_nanopb"
                   ],
