@@ -33,7 +33,7 @@ let package = Package(
     products: [
         .library(
             name: "UnbluMobileSDK",
-            targets: ["UnbluCoreSDK","UnbluFirebaseNotificationModule","UnbluMobileCoBrowsingModule","FirebaseMessaging"]),
+            targets: ["UnbluCoreSDK","UnbluFirebaseNotificationModule","UnbluMobileCoBrowsingModule"]),
         .library(
             name: "UnbliLiveKitWebRtcProvider",
             targets: ["UnbluLiveKitCallModule"]),
@@ -43,7 +43,7 @@ let package = Package(
         .library(
           name: "FirebaseMessaging",
           targets: ["FirebaseMessagingOrigin"]
-        ),
+        )
     ],
     targets: [
             .binaryTarget(
@@ -71,13 +71,10 @@ let package = Package(
                 url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluMobileCoBrowsingModule.xcframework.zip?raw=true",
                 checksum: UnbluMobileCoBrowsing_CHECKSUM
                 ),
-
-
             .target(
                   name: "Firebase",
                   publicHeadersPath: "./"
                 ),
-
             .target(
                   name: "FirebaseMessagingOrigin",
                   dependencies: [
@@ -88,8 +85,6 @@ let package = Package(
                   ],
                   path: "firebase/FirebaseMessaging"
                 ),
-
-
             .target(
                   name: "FirebaseAnalyticsOrigin",
                   dependencies: [
@@ -107,65 +102,64 @@ let package = Package(
                   ],
                   path: "firebase/FirebaseAnalytics"
             ),
-  
            .binaryTarget(
               name: "_FirebaseMessaging",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseMessaging.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseMessaging.xcframework.zip?raw=true",
               checksum: _FirebaseMessaging_CHECKSUM
             ),
             .binaryTarget(
               name: "_GoogleDataTransport",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleDataTransport.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleDataTransport.xcframework.zip?raw=true",
               checksum: _GoogleDataTransport_CHECKSUM
             ),
             .binaryTarget(
               name: "_FBLPromises",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FBLPromises.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FBLPromises.xcframework.zip?raw=true",
               checksum: _FBLPromises_CHECKSUM
             ),
             .binaryTarget(
               name: "_FirebaseAnalytics",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseAnalytics.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseAnalytics.xcframework.zip?raw=true",
               checksum: _FirebaseAnalytics_CHECKSUM
             ),
             .binaryTarget(
               name: "_FirebaseAnalyticsSwift",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseAnalyticsSwift.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseAnalyticsSwift.xcframework.zip?raw=true",
               checksum: _FirebaseAnalyticsSwift_CHECKSUM
             ),
             .binaryTarget(
               name: "_FirebaseCore",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCore.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCore.xcframework.zip?raw=true",
               checksum: _FirebaseCore_CHECKSUM
             ),
-             .binaryTarget(
+            .binaryTarget(
               name: "_FirebaseCoreInternal",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCoreInternal.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCoreInternal.xcframework.zip?raw=true",
               checksum: _FirebaseCoreInternal_CHECKSUM
             ),
             .binaryTarget(
               name: "_FirebaseInstallations",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseInstallations.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseInstallations.xcframework.zip?raw=true",
               checksum: _FirebaseInstallations_CHECKSUM
             ),
            .binaryTarget(
               name: "_GoogleAppMeasurement",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleAppMeasurement.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleAppMeasurement.xcframework.zip?raw=true",
               checksum: _GoogleAppMeasurement_CHECKSUM
             ),
             .binaryTarget(
               name: "_GoogleAppMeasurementIdentitySupport",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleAppMeasurementIdentitySupport.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleAppMeasurementIdentitySupport.xcframework.zip?raw=true",
               checksum: _GoogleAppMeasurementIdentitySupport_CHECKSUM
             ),
-           .binaryTarget(
+            .binaryTarget(
               name: "_GoogleUtilities",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleUtilities.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleUtilities.xcframework.zip?raw=true",
               checksum: _GoogleUtilities_CHECKSUM
             ),
             .binaryTarget(
               name: "_nanopb",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_nanopb.xcframework.zip",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_nanopb.xcframework.zip?raw=true",
               checksum: _nanopb_CHECKSUM
             )
     ]
