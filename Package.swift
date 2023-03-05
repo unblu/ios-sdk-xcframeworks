@@ -80,6 +80,7 @@ let package = Package(
                   dependencies: [
                     "Firebase",
                     "_FirebaseCore",
+                    "_FirebaseCoreInternal",
                     "_FirebaseMessaging",
                     "_GoogleDataTransport"
                   ],
@@ -100,5 +101,10 @@ let package = Package(
               url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCore.xcframework.zip?raw=true",
               checksum: _FirebaseCore_CHECKSUM
             ),
+            .binaryTarget(
+              name: "_FirebaseCoreInternal",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCoreInternal.xcframework.zip?raw=true",
+              checksum: _FirebaseCoreInternal_CHECKSUM
+            )
     ]
 )
