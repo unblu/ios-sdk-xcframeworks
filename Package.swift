@@ -83,7 +83,7 @@ let package = Package(
                     "_FirebaseMessaging",
                     "_GoogleDataTransport"
                   ],
-                  path: "firebase/FirebaseMessaging"
+                  path: "Source/FirebaseMessaging"
                 ),
             .target(
                   name: "FirebaseAnalyticsOrigin",
@@ -100,7 +100,7 @@ let package = Package(
                     "_GoogleUtilities",
                     "_nanopb"
                   ],
-                  path: "firebase/FirebaseAnalytics"
+                  path: "Source/FirebaseAnalytics"
             ),
            .binaryTarget(
               name: "_FirebaseMessaging",
