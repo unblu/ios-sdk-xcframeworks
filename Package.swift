@@ -81,9 +81,12 @@ let package = Package(
                     "Firebase",
                     "_FirebaseCore",
                     "_FirebaseCoreInternal",
-                   "_FirebaseInstallations",
+                    "_FirebaseInstallations",
+                    "_FBLPromises",
                     "_FirebaseMessaging",
-                    "_GoogleDataTransport"
+                    "_GoogleUtilities",
+                    "_GoogleDataTransport",
+                    "_nanopb"
                   ],
                   path: "Source/FirebaseMessaging"
                 ),
@@ -111,6 +114,21 @@ let package = Package(
               name: "_FirebaseInstallations",
               url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseInstallations.xcframework.zip?raw=true",
               checksum: _FirebaseInstallations_CHECKSUM
+            ),
+             .binaryTarget(
+              name: "_FBLPromises",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FBLPromises.xcframework.zip?raw=true",
+              checksum: _FBLPromises_CHECKSUM
+            ),
+             .binaryTarget(
+              name: "_GoogleUtilities",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_GoogleUtilities.xcframework.zip?raw=true",
+              checksum: _GoogleUtilities_CHECKSUM
+            ),
+            .binaryTarget(
+              name: "_nanopb",
+              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_nanopb.xcframework.zip?raw=true",
+              checksum: _nanopb_CHECKSUM
             )
     ]
 )
