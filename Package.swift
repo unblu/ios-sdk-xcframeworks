@@ -114,16 +114,6 @@ let package = Package(
               checksum: _FBLPromises_CHECKSUM
             ),
             .binaryTarget(
-              name: "_FirebaseAnalytics",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseAnalytics.xcframework.zip?raw=true",
-              checksum: _FirebaseAnalytics_CHECKSUM
-            ),
-            .binaryTarget(
-              name: "_FirebaseAnalyticsSwift",
-              url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseAnalyticsSwift.xcframework.zip?raw=true",
-              checksum: _FirebaseAnalyticsSwift_CHECKSUM
-            ),
-            .binaryTarget(
               name: "_FirebaseCore",
               url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_FirebaseCore.xcframework.zip?raw=true",
               checksum: _FirebaseCore_CHECKSUM
