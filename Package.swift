@@ -40,10 +40,10 @@ let package = Package(
         .library(
             name: "UnbluVonageWebRtcProvider",
             targets: ["UnbluOpenTokCallModule"]),
-        .library(
+    /*    .library(
           name: "FirebaseMessaging",
           targets: ["FirebaseMessagingOrigin"]
-        )
+        )*/
     ],
     targets: [
             .binaryTarget(
@@ -71,7 +71,7 @@ let package = Package(
                 url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluMobileCoBrowsingModule.xcframework.zip?raw=true",
                 checksum: UnbluMobileCoBrowsing_CHECKSUM
                 ),
-            .target(
+      /*      .target(
                   name: "Firebase",
                   publicHeadersPath: "./"
                 ),
@@ -129,6 +129,6 @@ let package = Package(
               name: "_nanopb",
               url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/firebase/_nanopb.xcframework.zip?raw=true",
               checksum: _nanopb_CHECKSUM
-            )
+            )*/
     ]
 )
