@@ -79,7 +79,6 @@ let package = Package(
                   name: "FirebaseMessagingOrigin",
                   dependencies: [
                     "Firebase",
-                    "FirebaseAnalyticsOrigin",
                     "_FirebaseMessaging",
                     "_GoogleDataTransport"
                   ],
