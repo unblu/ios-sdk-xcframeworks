@@ -9,6 +9,7 @@ let UnbluFirebaseNotificationModule_CHECKSUM = "966002aebb78958369e4a8da94bfd041
 let UnbluOpenTokCallModule_CHECKSUM = "662284dac9d66969ad7cfad94a2b50c2eefab0953ab9ed45174465baac231492"
 let UnbluLiveKitCallModule_CHECKSUM = "8387b6201e73d3c4d8bf54abb2a5b7e5b9697ca91e80f984c34fd34b5d29438b"
 let UnbluMobileCoBrowsing_CHECKSUM = "e864332dac9363d8c9f67a28a4c3a03c11c4306d1d3016073fde99d3e5bfd65d"
+let UnbluCallKitModule_CHECKSUM = "e864332dac9363d8c9f67a28a4c3a03c11c4306d1d3016073fde99d3e5bfd65d"
 
 
 let package = Package(
@@ -25,7 +26,10 @@ let package = Package(
             targets: ["UnbluLiveKitCallModule"]),
         .library(
             name: "UnbluVonageWebRtcProvider",
-            targets: ["UnbluOpenTokCallModule"])
+            targets: ["UnbluOpenTokCallModule"]).
+         .library(
+            name: "UnbluCallKitModule",
+            targets: ["UnbluCallKitModule"])
     ],
     targets: [
             .binaryTarget(
@@ -52,6 +56,11 @@ let package = Package(
                 name: "UnbluMobileCoBrowsingModule",
                 url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluMobileCoBrowsingModule.xcframework.zip?raw=true",
                 checksum: UnbluMobileCoBrowsing_CHECKSUM
+                ),
+             .binaryTarget(
+                name: "UnbluCallKitModule",
+                url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluCallKitModule.xcframework.zip?raw=true",
+                checksum: UnbluCallKitModule_CHECKSUM
                 )
     ]
 )
