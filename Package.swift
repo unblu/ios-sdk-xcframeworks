@@ -26,7 +26,7 @@ let package = Package(
             targets: ["UnbluLiveKitCallModule"]),
         .library(
             name: "UnbluVonageWebRtcProvider",
-            targets: ["UnbluOpenTokCallModule"]).
+            targets: ["UnbluOpenTokCallModule"]),
          .library(
             name: "UnbluCallKitModule",
             targets: ["UnbluCallKitModule"])
