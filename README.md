@@ -4,6 +4,9 @@ The Unblu iOS mobile SDK serves as a way to integrate the Unblu platform into na
 
 Unblu delivers the Unblu iOS mobile SDK as several Swift packages on GitHub: https://github.com/unblu/ios-sdk-xcframeworks
 
+# License
+Please read the [license file](./LICENSE)
+
 # Installing
 
 To add the Unblu iOS mobile SDK Swift package to your Xcode project:
