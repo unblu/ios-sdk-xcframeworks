@@ -29,6 +29,9 @@ To add the Unblu iOS mobile SDK Swift package to your Xcode project:
 
 For more information about adding Swift packages in Xcode, refer to [Adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
+# iOS mobile SDK release notes
+- [Releases](https://www.unblu.com/en/docs/latest/release-notes/mobile-sdk-ios.html)
+
 # Documentation
 
 - [Main Unblu documentation site](https://www.unblu.com/en/docs/latest/)
