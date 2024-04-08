@@ -22,7 +22,7 @@ let package = Package(
     products: [
         .library(
             name: "UnbluMobileSDK",
-            targets: ["UnbluCoreSDK","UnbluFirebaseNotificationModule","UnbluMobileCoBrowsingModule"]),
+            targets: ["UnbluCoreSDK","UnbluMobileCoBrowsingModule"]),
         .library(
             name: "UnbluLiveKitWebRtcProvider",
             targets: ["UnbluLiveKitCallModule"]),
@@ -31,7 +31,10 @@ let package = Package(
             targets: ["UnbluOpenTokCallModule"]),
          .library(
             name: "UnbluCallKitModule",
-            targets: ["UnbluCallKitModule"])
+            targets: ["UnbluCallKitModule"]),
+         .library(
+            name: "UnbluFirebaseNotificationModule",
+            targets: ["UnbluFirebaseNotificationModule"])
     ],
     targets: [
             .binaryTarget(
