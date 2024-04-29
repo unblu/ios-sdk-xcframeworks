@@ -22,7 +22,10 @@ let package = Package(
     products: [
         .library(
             name: "UnbluMobileSDK",
-            targets: ["UnbluCoreSDK","UnbluFirebaseNotificationModule","UnbluMobileCoBrowsingModule"]),
+            targets: ["UnbluCoreSDK","UnbluMobileCoBrowsingModule"]),
+        .library(
+            name: "UnbluFirebaseNotificationModule",
+            targets: ["UnbluFirebaseNotificationModule"]),        
         .library(
             name: "UnbluLiveKitWebRtcProvider",
             targets: ["UnbluLiveKitCallModule"]),
