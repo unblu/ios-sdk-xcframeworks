@@ -10,6 +10,7 @@ let UnbluOpenTokCallModule_CHECKSUM = "9563f26d8c26b4cd75401b6dac88f82102865cf58
 let UnbluLiveKitCallModule_CHECKSUM = "02044cd26282e37bc3c94a4de2228cfd4ac11fc8384a7e0c9419249030a5e043"
 let UnbluMobileCoBrowsing_CHECKSUM = "a2699f20507b7d17fa5a2520fd21087ec6efc0e514c973fefc55688b65aa0595"
 let UnbluCallKitModule_CHECKSUM = "045f22919d1cc008f53930b24d5caa84bce451f70c722773344abe5cabe167d4"
+let UnbluDocumentCoBrowsingModule_CHECKSUM = "045f22919d1cc008f53930b24d5caa84bce451f70c722773344abe5cabe167d4"
 
 
 
@@ -34,7 +35,10 @@ let package = Package(
             targets: ["UnbluOpenTokCallModule"]),
          .library(
             name: "UnbluCallKitModule",
-            targets: ["UnbluCallKitModule"])
+            targets: ["UnbluCallKitModule"]),
+         .library(
+            name: "UnbluDocumentCoBrowsingModule",
+            targets: ["UnbluDocumentCoBrowsingModule"])
     ],
     targets: [
             .binaryTarget(
@@ -66,6 +70,11 @@ let package = Package(
                 name: "UnbluCallKitModule",
                 url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluCallKitModule.xcframework.zip?raw=true",
                 checksum: UnbluCallKitModule_CHECKSUM
+                ),
+             .binaryTarget(
+                name: "UnbluDocumentCoBrowsingModule",
+                url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluDocumentCoBrowsingModule.xcframework.zip?raw=true",
+                checksum: UnbluDocumentCoBrowsingModule_CHECKSUM
                 )
     ]
 )
