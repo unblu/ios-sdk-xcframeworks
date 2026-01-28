@@ -11,6 +11,7 @@ let UnbluLiveKitCallModule_CHECKSUM = "c3ac91250333ab1732a7f30682cab06316e8bcf6d
 let UnbluMobileCoBrowsing_CHECKSUM = "783bb85d2936526c17fd65c09b14718cfe06727a0982f57de769fba17915476b"
 let UnbluCallKitModule_CHECKSUM = "fae7851cec852e67af8ec2b43968f0f55b011db1e6993ada5ae25c355e8302b4"
 let UnbluDocumentCoBrowsingModule_CHECKSUM = "c0ae995badec683cb701f034a5847b6b2b25c5eba08b69b008da8294e91532b8"
+let UnbluAppIntegrityModule_CHECKSUM = "80eb1494b5841feafd788169c0246f95c86b11c7f974171d1b4af06dedf78ccd"
 
 
 
@@ -38,7 +39,10 @@ let package = Package(
             targets: ["UnbluCallKitModule"]),
          .library(
             name: "UnbluDocumentCoBrowsingModule",
-            targets: ["UnbluDocumentCoBrowsingModule"])
+            targets: ["UnbluDocumentCoBrowsingModule"]),
+         .library(
+            name: "UnbluAppIntegrityModule",
+            targets: ["UnbluAppIntegrityModule"])
     ],
     targets: [
             .binaryTarget(
@@ -75,6 +79,11 @@ let package = Package(
                 name: "UnbluDocumentCoBrowsingModule",
                 url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluDocumentCoBrowsingModule.xcframework.zip?raw=true",
                 checksum: UnbluDocumentCoBrowsingModule_CHECKSUM
+                ),
+             .binaryTarget(
+                name: "UnbluAppIntegrityModule",
+                url: "https://github.com/unblu/ios-sdk-xcframeworks/blob/\(version)/UnbluAppIntegrityModule.xcframework.zip?raw=true",
+                checksum: UnbluAppIntegrityModule_CHECKSUM
                 )
     ]
 )
