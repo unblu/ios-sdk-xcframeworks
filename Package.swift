@@ -2,7 +2,7 @@
 
 import PackageDescription
 
-let version = "main"
+let version = "4.14.5"
 
 let UnbluCoreSDK_CHECKSUM = "47d7b14b92898e7f687c0377f4501751ba689390754277fe3c75e813e80b8ae2"
 let UnbluFirebaseNotificationModule_CHECKSUM = "ca774a88a40eb818e2bf9e5dba43c0a00e1935810d5dc81d2b81bf34c4dcd1be"
